@@ -3,6 +3,12 @@ name = "async-tls-acceptor"
 version = "0.1.0"
 authors = ["Jacob Rothstein <hi@jbr.me>"]
 edition = "2018"
+description = "a trait for tls acceptors"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/trillium-rs/async-tls-acceptor"
+readme = "README.md"
+keywords = ["tls", "async"]
+categories = ["web-programming::http-server", "web-programming"]
 
 [dependencies]
 futures-lite = "1.11.3"
