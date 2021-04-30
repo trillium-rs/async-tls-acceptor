@@ -22,7 +22,7 @@ use std::convert::Infallible;
 /// a noop acceptor, and passes through the `Input` type.
 ///
 /// Implementing this trait looks like:
-/// ```rust,no_compile
+/// ```rust,ignore
 /// #[async_trait]
 /// impl<Input> Acceptor<Input> for my_tls_impl::Acceptor
 /// where
@@ -49,7 +49,7 @@ where
     /// Transform an Input (`AsyncRead + AsyncWrite + Send + Sync + Unpin + 'static`) into Self::Output
     ///
     /// Async trait signature:
-    /// ```rust,no_compile
+    /// ```rust,ignore
     /// async fn accept(&self, input: Input) -> Result<Self::Output, Self::Error>;
     /// ```
     async fn accept(&self, input: Input) -> Result<Self::Output, Self::Error>;
