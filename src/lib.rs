@@ -16,7 +16,7 @@ pub use futures_lite::{AsyncRead, AsyncWrite};
 use std::convert::Infallible;
 
 /// This trait provides the common interface for server-side tls
-/// acceptors, abstracting over various implementations
+/// acceptors, abstracting over various implementations.
 ///
 /// The only implementation provided by this crate is `()`, which is
 /// a noop acceptor, and passes through the `Input` type.
