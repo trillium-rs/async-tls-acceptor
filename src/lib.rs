@@ -12,7 +12,7 @@
 //! acceptors, abstracting over various implementations
 
 pub use async_trait::async_trait;
-pub use futures_lite::{AsyncRead, AsyncWrite};
+pub use futures_io::{AsyncRead, AsyncWrite};
 use std::convert::Infallible;
 
 /// This trait provides the common interface for server-side tls
