@@ -1,0 +1,1 @@
+initSidebarItems({"attr":[["async_trait",""]],"trait":[["Acceptor","This trait provides a common interface for server-side tls acceptors, abstracting over various implementations."],["AsyncRead","Read bytes asynchronously."],["AsyncWrite","Write bytes asynchronously."]]});
