@@ -8,14 +8,14 @@
     unused_qualifications
 )]
 
-//! This crate provides the common interface for server-side tls
+//! This crate provides a common interface for server-side tls
 //! acceptors, abstracting over various implementations
 
 pub use async_trait::async_trait;
 pub use futures_io::{AsyncRead, AsyncWrite};
 use std::convert::Infallible;
 
-/// This trait provides the common interface for server-side tls
+/// This trait provides a common interface for server-side tls
 /// acceptors, abstracting over various implementations.
 ///
 /// The only implementation provided by this crate is `()`, which is
@@ -40,7 +40,7 @@ pub trait Acceptor<Input>: Clone + Send + Sync + 'static
 where
     Input: AsyncRead + AsyncWrite + Send + Sync + Unpin + 'static,
 {
-    /// The stream type. For example, TlsStream<Input>
+    /// The stream type. For example, `TlsStream<Input>`
     type Output: AsyncRead + AsyncWrite + Send + Sync + Unpin + 'static;
 
     /// An error type that [`Acceptor::accept`] may return
